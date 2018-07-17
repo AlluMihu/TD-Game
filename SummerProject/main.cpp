@@ -77,32 +77,32 @@ int main(void){
 	timer = al_create_timer(1.0 / FPS);
 	event_queue = al_create_event_queue();
 
-	imageBG = al_load_bitmap("sandBG.png");
+	imageBG = al_load_bitmap("AuxiliarData/sandBG.png");
 	Background BG(0, 0, GAME_PIXEL_WIDTH, GAME_PIXEL_HEIGHT, imageBG);
 
-	imageLevel = al_load_bitmap("LevelSelect.png");
+	imageLevel = al_load_bitmap("AuxiliarData/LevelSelect.png");
 
 
 	ALLEGRO_BITMAP *playerBitmap = NULL;
-	playerBitmap = al_load_bitmap("player.png");
+	playerBitmap = al_load_bitmap("AuxiliarData/player.png");
 	Player player(playerBitmap);
 
 	Bullets bullets[maxBullets];
 	Bullets bulletsUsed[maxBullets];
-	font24 = al_load_font("Montserrat-Regular.ttf", 24, 0);
+	font24 = al_load_font("AuxiliarData/Montserrat-Regular.ttf", 24, 0);
 	
 	ALLEGRO_BITMAP *obstacleBitmap = NULL;
-	obstacleBitmap = al_load_bitmap("stone.png");
+	obstacleBitmap = al_load_bitmap("AuxiliarData/stone.png");
 	Obstacle obstacle1(30, 5, obstacleBitmap);
 	Obstacle obstacle2(23, 15, obstacleBitmap);
 	Obstacle obstacle3(40, 24, obstacleBitmap);
 
 	ALLEGRO_BITMAP *teroBitmap1 = NULL;
-	teroBitmap1 = al_load_bitmap("Rept1.png");
+	teroBitmap1 = al_load_bitmap("AuxiliarData/Rept1.png");
 	ALLEGRO_BITMAP *teroBitmap2 = NULL;
-	teroBitmap2 = al_load_bitmap("Rept2.png");
+	teroBitmap2 = al_load_bitmap("AuxiliarData/Rept2.png");
 	ALLEGRO_BITMAP *teroBitmap3 = NULL;
-	teroBitmap3 = al_load_bitmap("Rept3.png");
+	teroBitmap3 = al_load_bitmap("AuxiliarData/Rept3.png");
 	Terrorist tero[maxEnemy];
 	teroSettings teroSet[maxEnemy];
 
